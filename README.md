@@ -1,4 +1,4 @@
-# ⚡ Photoelectric Effect 3D Simulation
+# ⚡ Photoelectric Effect 
 
 An interactive 3D educational project that demonstrates the **Photoelectric Effect** using Three.js.  
 It combines physics visualization + presentation slides in a single web-based experience.
