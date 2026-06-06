@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mh hridoy</title>
+
+<style>
+body { margin:0; overflow:hidden; background:#000; }
+
+
+#ui{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:10;
+    background:rgba(0,0,0,0.6);
+    padding:12px;
+    border-radius:10px;
+    color:white;
+}
+
+/* BUTTON */
+button{
+    padding:10px 14px;
+    cursor:pointer;
+    border:none;
+    background:#ffcc00;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+/* SLIDE CARD */
+#slideCard{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:60%;
+    max-width:700px;
+    background:rgba(0,0,0,0.75);
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    z-index:20;
+    font-family:Arial;
+    line-height:1.5;
+}
+
+#slideTitle{
+    color:#ffcc00;
+    margin-bottom:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#navBtns{
+    margin-top:12px;
+    display:flex;
+    justify-content:space-between;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+</head>
+
+<body>
+
+<div id="ui">
+<h3>MH HRIDOY</h3>
+<button onclick="toggleLight()">SUN SWITCH</button>
+</div>
+
+<!-- SLIDE CARD -->
+<div id="slideCard">
+    <div id="slideTitle">Slide 1</div>
+    <div id="slideText"></div>
+
+    <div id="navBtns">
+        <button onclick="prevSlide()">⬅ Prev</button>
+        <button onclick="nextSlide()">Next ➡</button>
+    </div>
+</div>
+
+<script src="f.js"></script>
+
+</body>
+</html>
